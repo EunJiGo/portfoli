@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Element, Link } from 'react-scroll';
 import './header.css';
 import './AboutMeSection.css';
 import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGraduationCap, FaPaperclip } from 'react-icons/fa'; // 아이콘 임포트
 
 const AboutMeSection = () => {
-  
+
   return (
     <Element name="about" className="section">
       <div className="about-header">

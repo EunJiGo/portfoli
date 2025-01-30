@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Element, Link, FaCircle } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
 import './header.css';
 import './ProjectsSection.css';
 import { FaPaperclip, FaExternalLinkAlt } from 'react-icons/fa';
@@ -233,7 +233,8 @@ const ProjectsSection = () => {
         >
           <div className="image-modal-body">
             {/* 현재 이미지 표시 */}
-            <img src={selectedImage} alt="Project Image" />
+            {/* <img src={selectedImage} alt="Project Image" /> */}
+            <img src={selectedImage} />
           </div>
           {/* 이미지 슬라이드 버튼 */}
           <div className="image-nav">

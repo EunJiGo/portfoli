@@ -42,9 +42,9 @@ const ArchivingSection = () => {
         url: process.env.PUBLIC_URL + "/pdf/test.pdf", // 첫 번째 PDF 파일 링크
     };
 
-    const project2PDF = {
-        url: process.env.PUBLIC_URL + "/pdf/test.pdf", // 두 번째 PDF 파일 링크
-    };
+    // const project2PDF = {
+    //     url: process.env.PUBLIC_URL + "/pdf/test.pdf", // 두 번째 PDF 파일 링크
+    // };
 
     return (
         <Element name="archiving" className="archiving-section">
