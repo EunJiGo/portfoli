@@ -1,0 +1,34 @@
+{
+    "Language": [
+      { "name": "JavaScript", "backgroundColor": "blue", "textColor": "white" },
+      { "name": "Java (SpringBoot)", "backgroundColor": "green", "textColor": "white" },
+      { "name": "Swift", "backgroundColor": "purple", "textColor": "white" },
+      { "name": "C", "backgroundColor": "orange", "textColor": "white" },
+      { "name": "C++", "backgroundColor": "orange", "textColor": "white" },
+      { "name": "PHP", "backgroundColor": "red", "textColor": "white" },
+      { "name": "Dart (Flutter)", "backgroundColor": "teal", "textColor": "white" }
+    ],
+    "Frontend": [
+      { "name": "HTML", "backgroundColor": "gray", "textColor": "black" },
+      { "name": "CSS", "backgroundColor": "gray", "textColor": "black" },
+      { "name": "React (Node.js)", "backgroundColor": "blue", "textColor": "white" },
+      { "name": "React-Query", "backgroundColor": "blue", "textColor": "white" },
+      { "name": "React-Hook-Form", "backgroundColor": "blue", "textColor": "white" }
+    ],
+    "Backend": [
+      { "name": "MySQL", "backgroundColor": "yellow", "textColor": "black" },
+      { "name": "SQLite", "backgroundColor": "yellow", "textColor": "black" },
+      { "name": "Firebase", "backgroundColor": "lightblue", "textColor": "white" },
+      { "name": "MongoDB", "backgroundColor": "lightgreen", "textColor": "black" },
+      { "name": "HiRDB", "backgroundColor": "pink", "textColor": "black" }
+    ],
+    "DevOps": [
+      { "name": "AWS", "backgroundColor": "lightgray", "textColor": "black" },
+      { "name": "Docker", "backgroundColor": "darkgray", "textColor": "white" }
+    ],
+    "DataFormatsMarkup": [
+      { "name": "XML", "backgroundColor": "lightgray", "textColor": "black" },
+      { "name": "JSON", "backgroundColor": "lightblue", "textColor": "black" }
+    ]
+  }
+  

@@ -1,0 +1,145 @@
+/* 전체 섹션 중앙 정렬 */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    padding: 50px 0; /* 상하 패딩을 동일하게 설정 */
+    /* background-color: #f4f4f4; */
+}
+
+/* About Me 제목 */
+.about-header {
+    padding: 20px 0; /* 상하 패딩을 동일하게 설정 */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: center; /* 제목 중앙 정렬 */
+}
+
+/* About Me 텍스트 스타일 */
+.about-header span {
+    border-bottom: 1px solid #c5c5c59f; /* 얇은 회색 밑줄 추가 */
+    padding-bottom: 2px; /* 밑줄과 텍스트 사이 여백 */
+    display: inline-block; /* span을 inline-block으로 변경 */
+}
+
+/* 세부 정보 표시 */
+.about-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center;
+    /* justify-content: space-between; */
+    width: 85%; /* 세부 정보 너비를 100%로 설정 */
+    padding: 0 20px; /* 좌우 패딩만 설정 */
+}
+
+/* 각 행을 세 개의 열로 나누어 정렬 */
+.info-row {
+    padding: 8px; /* 안쪽 여백 추가 */
+    display: flex;
+    flex-wrap: wrap; /* 아이템들이 화면에 맞게 줄바꿈 되도록 설정 */
+    justify-content: space-evenly; /* 열을 동일한 간격으로 분배 */
+    align-items: center; /* 아이콘들이 수직으로 맞춰지도록 */
+    gap: 16px;
+    width: 100%; /* 각 행의 너비를 100%로 설정 */   
+     
+}
+
+/* 작은 화면에서 3개씩 2줄, 2개씩 3줄, 1개씩 6줄로 표시되도록 조정 */
+@media (max-width: 1800px) {
+    .info-row > div {
+        flex: 1 1 30%; /* 3개씩 한 줄에 표시, 30% 너비 */
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .info-row > div {
+        flex: 1 1 45%; /* 2개씩 한 줄에 표시, 45% 너비 */
+    }
+    .about-header {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .info-row > div {
+        flex: 1 1  100%; /* 1개씩 한 줄에 표시, 100% 너비 */
+    }
+    .about-header {
+        font-size: 40px;
+    }
+}
+
+/* 텍스트 스타일 */
+.info-row span {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+/* 아이콘 크기 */
+.info-row svg {
+    color: #555;
+    font-size: 20px;
+}
+
+/* 각 행을 세 개의 열로 나누어 정렬 */
+.info-sub-row {
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    width: 100%; /* 각 행의 너비를 100%로 설정 */
+    max-width: 1000px; /* 최대 너비 설정 */
+    padding: 8px; /* 안쪽 여백 추가 */
+}
+
+.info-sub-row > div {
+    justify-content: flex-start;
+}
+
+.info-sub {
+    /* background-color: lightpink; */
+    display: flex;
+    justify-content: flex-start; /* 아이템들을 왼쪽으로 정렬 */
+    align-items: center; /* 아이콘들이 수직으로 맞춰지도록 */
+    width: 200px;
+  }
+
+/* 아이콘 위에 이름을 배치하기 위해 flex-direction을 column으로 변경 */
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* 아이콘 중앙 정렬 */
+    width: 40px; /* 아이콘의 크기 */
+    margin-right: 15px;
+  }
+  
+/* 이름과 텍스트를 오른쪽에 수직으로 배치 */
+.info-text {
+  display: flex;
+  flex-direction: column; /* 수직 정렬 */
+  justify-content: center; /* 세로로 중앙 정렬 */
+}
+
+/* 이름 스타일 */
+.sub-title {
+  font-size: 15px !important; 
+  font-weight: bold !important;
+  
+}
+
+/* 이름 밑에 표시할 텍스트 스타일 */
+.sub-contents {
+  font-size: 14px !important;
+  color: #555 !important;
+  margin-top: 4px; /* 이름과 밑에 텍스트 간격 */
+  font-weight: 500 !important;
+}

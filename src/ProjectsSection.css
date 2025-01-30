@@ -1,0 +1,439 @@
+/* 전체 섹션 중앙 정렬 */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 수평 중앙 정렬 */
+  justify-content: center;
+  /* 수직 중앙 정렬 */
+  padding: 50px 0;
+  /* 상하 패딩을 동일하게 설정 */
+  background-color: #f5f5f5;
+}
+
+/* Projects 제목 */
+.projects-header {
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 60px;
+  font-weight: bold;
+  justify-content: center;
+  /* 제목 중앙 정렬 */
+}
+
+/* Projects 텍스트 스타일 */
+.projects-header span {
+  border-bottom: 1px solid #9b9b9bd4;
+  /* 얇은 회색 밑줄 추가 */
+  padding-bottom: 10px;
+  /* 밑줄과 텍스트 사이 여백 */
+  display: inline-block;
+  /* span을 inline-block으로 변경 */
+  margin-left: 10px;
+  /* 아이콘과 텍스트 사이 간격 */
+}
+
+@media (max-width: 1000px) {
+  .projects-header {
+      font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-header {
+      font-size: 40px;
+  }
+}
+
+/* .projects-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+} */
+
+
+.projects-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  /* 한 항목의 최소 너비는 300px, 공간에 맞춰 자동으로 2개씩 배치 */
+  gap: 40px; /* 항목 간 간격 */
+  margin: 0 auto;
+  /* 가운데 정렬 */
+  max-width: 1200px; /* 최대 너비 설정 */
+  padding: 0 20px; /* 양옆 여백 */
+}
+
+/* 화면이 좁을 때 한 줄에 하나씩 표시 */
+@media (max-width: 980px) {
+  .projects-details {
+    grid-template-columns: 1fr; /* 화면 크기가 768px 이하일 때 한 줄에 하나씩 표시 */
+  }
+  .modal-content {
+    width: 400px;
+  }
+}
+
+.filter-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.filter-container label {
+  display: flex; /* 내부 요소를 flex로 정렬 */
+  align-items: center; /* 텍스트와 체크박스를 세로로 중앙 정렬 */
+  gap: 5px; /* 체크박스와 텍스트 사이 간격 */
+  font-size: 15px; /* 텍스트 크기 */
+  /* font-weight: 500; */
+}
+
+.filter-container input[type="checkbox"] {
+  width: 15px; /* 체크박스 너비 */
+  height: 15x; /* 체크박스 높이 */
+  transform: scale(1.5); /* 크기를 1.5배로 확대 */
+  margin-right: 10px; /* 텍스트와의 간격 */
+}
+
+
+.project-box {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* margin-bottom: 20px; */
+  padding: 30px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.project-title.main {
+  background: red;
+  color: white;
+}
+
+.project-title.sub {
+  background: gray;
+  color: white;
+}
+
+.project-meta {
+  color: #555;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.project-subtitle {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.project-contents {
+  color: #444;
+  font-size: 15px;
+  /* 크기 조절 */
+  padding-top: 0;
+  margin-top: 5px;
+  padding-left: 10px;
+  /* 기본 padding 제거 */
+  list-style-position: inside;
+  /* 점을 리스트 항목 안쪽에 위치시킴 */
+}
+
+.project-contents li {
+  list-style-type: none; /* 기본 점 제거 */
+  padding-left: 15px; /* 점과 텍스트 사이 간격 설정 */
+  position: relative; /* 점 위치를 설정하기 위해 position 사용 */
+  /* margin-bottom: 3px; 항목 간 여백 추가 */
+}
+
+.project-contents li::before {
+  content: "・"; /* 원하는 점 기호 */
+  position: absolute; /* 점 위치 고정 */
+  left: 0; /* 항목의 왼쪽에 배치 */
+  top: 0; /* 첫 줄에 맞추기 */
+  line-height: 1; /* 줄 높이를 기본값으로 설정 */
+  vertical-align: middle; /* 텍스트 높이에 맞춤 */
+  transform: translateY(10%); /* 미세한 위치 조정 */
+  font-size: 18px; /* 점 크기 */
+  color: #444; /* 점 색상 */
+}
+
+/* .project-url {
+    margin-bottom: 10px;
+  } */
+
+.project-url a {
+  display: flex;
+  align-items: center;
+  /* 아이콘과 텍스트를 수직 정렬 */
+  color: rgb(2, 126, 235);
+  text-decoration: none;
+  gap: 10px;
+  /* 아이콘과 텍스트 사이 간격 설정 (px 단위 추가) */
+  font-size: 15px;
+  /* 크기 조정 */
+  /* border-left: 4px solid rgb(2, 126, 235); */
+  /* padding-left: 5px; */
+}
+
+.project-tech {
+  background: #fff8e1;
+  border: 1px solid #ffd54f;
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.project-resources {
+  display: flex;
+  /* 버튼들을 가로로 배치 */
+  flex-direction: row;
+  /* 기본값으로 가로 배치 */
+  gap: 5px;
+  /* 버튼 간 간격 추가 */
+}
+
+.project-resources button {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  display: flex;
+  /* 아이콘과 텍스트를 수평 정렬 */
+  align-items: center;
+  /* 수직 가운데 정렬 */
+  gap: 2px;
+  /* 아이콘과 텍스트 사이 간격 */
+}
+
+/* 모달 배경 어둡게 */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* 어두운 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20; /* 헤더(10)보다 더 높은 값 */
+}
+
+/* 모달 창 스타일 */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: auto; 세로 스크롤 활성화 */
+  background-color: #fff;
+  /* padding: 20px; */
+  border-radius: 10px;
+  width: 800px;
+  margin: 50px auto; /* 화면 중앙에 배치 */
+  position: relative; /* 다른 요소와 겹침 방지 */
+}
+
+.modal-header {
+  display: flex; /* flexbox로 배치 */
+  justify-content: space-between; /* 제목과 버튼을 양 끝에 배치 */
+  align-items: center; /* 수직으로 가운데 정렬 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #222;
+  color: white; /* 제목 텍스트를 하얀색으로 설정 */
+  padding: 20px 20px; /* 여백 추가 */
+  font-size: 20px; /* 폰트 크기 조정 (선택사항) */
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: rgb(117, 117, 117);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn i {
+  font-size: 20px; /* 아이콘 크기 조정 */
+}
+
+.modal-body {
+  padding: 0px 30px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  overflow-y: auto; /* 스크롤 가능하게 설정 */
+  max-height: calc(80vh - 50px); 
+  /* 헤더와 여백을 제외한 최대 높이 */
+}
+
+.modal-box {
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  padding: 0px 0px;
+  border-bottom: 1px solid #9b9b9bd4;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.modal-title h1{
+  color: #000;
+}
+
+.modal-meta {
+  padding: 20px 0px;
+  font-size: 15px;
+}
+
+.modal-box-title {
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.modal-box-title svg {
+  margin-right: 8px; /* 아이콘과 텍스트 사이 간격 추가 */
+}
+
+.modal-subtitle {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+}
+
+.modal-contents {
+  color: #444;
+  font-size: 18px;
+  /* 크기 조절 */
+  margin-top: 8px;
+  margin-left: 10px;
+  padding-left: 10px;
+  /* 기본 padding 제거 */
+}
+
+.modal-features {
+  border-left: 5px solid #6f6f6f; /* 두께를 5px로 설정하고 색은 #555로 */
+  padding-left: 20px; /* 텍스트와 테두리 사이에 여백을 추가 */
+  color: #6f6f6f;
+}
+
+/* 모달 창 스타일 */
+.image-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px; /* 박스 모서리를 둥글게 */
+}
+
+/* 이미지 박스 스타일 */
+.image-modal-body {
+  /* padding: 15px; */
+  width: 460px; /* 박스의 너비 지정 */
+  height: 550px; /* 박스의 높이 지정 */
+  overflow: hidden; /* 이미지가 박스를 벗어나지 않도록 처리 */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 박스에 그림자 추가 */
+  /* position: relative; 이미지 안에 텍스트나 다른 요소를 배치할 때 사용할 수 있음 */
+}
+
+/* 이미지 스타일 */
+.image-modal-body img {
+  width: 100%; /* 이미지를 박스 크기에 맞게 채우도록 설정 */
+  height: 100%; /* 이미지를 박스 높이에 맞게 조절 */
+  object-fit: cover; /* 비율을 유지하면서 박스를 가득 채우도록 설정 */
+}
+
+.image-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.image-nav span {
+  padding: 0px 20px;
+}
+
+.image-nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px; /* 아이콘 크기 */
+  background-color: #ffffff;
+  border: 0px solid #cbcbcb;
+  border-radius: 50%; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-nav button:hover {
+  background-color: #f0f0f0;
+}
+
+.image-nav button.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* 모달 오버레이 스타일 */
+.no-scroll-overlay {
+  overflow: visible; /* 내부 스크롤 비활성화 */
+}
+
+/* 모달 콘텐츠 스타일 */
+.no-scroll-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  overflow: visible; /* 내부 스크롤 제거 */
+}
+
+/* 화면이 좁을 때 모달창 크기 */
+@media (max-width: 850px) {
+  .projects-details {
+    grid-template-columns: 1fr; /* 화면 크기가 768px 이하일 때 한 줄에 하나씩 표시 */
+  }
+  .modal-content {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects-details {
+    grid-template-columns: 1fr; /* 화면 크기가 768px 이하일 때 한 줄에 하나씩 표시 */
+  }
+  .modal-content {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-details {
+    grid-template-columns: 1fr; /* 화면 크기가 768px 이하일 때 한 줄에 하나씩 표시 */
+  }
+  .modal-content {
+    width: 450px;
+  }
+}

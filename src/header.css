@@ -1,0 +1,22 @@
+/* FaPaperclip 아이콘 기본 색상 및 호버 시 색상 변경 */
+.about-icon {
+    color: #555; /* 진한 회색 */
+    transition: color 0.3s; /* 색상 전환 효과 */
+    font-size: 40px; /* 아이콘 크기 변경 */
+  }
+  
+  .about-icon:hover {
+    color: #000; /* 호버 시 검은색으로 변경 */
+  }
+
+  @media (max-width: 1000px) {
+    .about-icon {
+      font-size: 35px; /* 아이콘 크기 변경 */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .about-icon {
+        font-size: 30px;
+    }
+  }

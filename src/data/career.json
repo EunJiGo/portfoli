@@ -1,0 +1,43 @@
+{
+    "company": "(株式会社)ジエンジサービス",
+    "employment_period": "2022.11-(在職中)",
+    "company_description": "エンジニア派遣およびシステムインテグレーション(SI)サービスを中心に、業現場に最適化された技術サポートを提供",
+    "key_tasks": [
+      "iOS、Flutter開発",
+      "詳細設計書作成",
+      "単体、結合テスト"
+    ],
+    "projects": [
+      {
+        "title": "社員情報管理アプリ(Flutter)",
+        "period": "2022.11 - 2023.7",
+        "description": "社員情報管理システム開発"
+      },
+      {
+        "title": "社員情報管理アプリのPhase2 (Swift)",
+        "period": "2023.8 - 2023.12",
+        "description": "組織図と社内共用文書の閲覧機能の追加"
+      },
+      {
+        "title": "受付専用アプリの改修 (Swift)",
+        "period": "2023.8 - 2023.12",
+        "description": "受付用アプリの音声機能の改修"
+      },
+      {
+        "title": "Device stock（デバイス予約管理）-S社金融系 (Swift)",
+        "period": "2024.1 - 2023.7",
+        "description": "UI修正及びセキュリティおよび性能の最適化"
+      },
+      {
+        "title": "Business Partnerアプリ開発 (Flutter)",
+        "period": "2024.8 - 2023.11",
+        "description": "Business Partner"
+      },
+      {
+        "title": "年金ウェブサイトのテスト-H社金融系",
+        "period": "2024.12",
+        "description": "単体テスト・結合テスト進行"
+      }
+    ]
+  }
+  
