@@ -60,12 +60,9 @@
   display: flex;
 }
 
-
-
 /* 마스트헤드 스타일 */
 .masthead {
-  position: relative;
-  height: 80vh;
+  height: 700px;
   background-image: url('./images/developmentImage.jpg');
   background-size: cover;
   background-position: center;
@@ -77,14 +74,11 @@
 }
 
 .masthead-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: white;
-  z-index: 1;
-  /* 이미지 위에 텍스트가 표시되도록 설정 */
 }
 
 /* masthead-content 내부 h1 스타일 */
@@ -161,6 +155,9 @@
 
 
 .see-more {
+  position: relative;  /* position 속성을 relative로 설정해야 z-index가 적용됩니다 */
+  z-index: 1000;  /* 버튼을 최상위로 올려서 클릭 가능하게 만듭니다 */
+  pointer-events: auto;  /* 클릭 가능하게 설정 */
   background-color: rgb(27, 27, 219);
   /* 파란색 배경 */
   color: white;

@@ -126,10 +126,10 @@ function App() {
       {/* 마스트헤드 */}
       <div className="masthead">
         <div className="masthead-content">
-          <h1>- 高恩智 -<br />モバイル開発者ポートフォリオ</h1>
+          <h1 onClick={() => console.log('Button clicked')}>- 高恩智 -<br />モバイル開発者ポートフォリオ</h1>
           <hr />
           <h2>始めなして。<br />本質に集中するモバイル開発者<br />「高恩智」です。</h2>
-          <Link to="about" smooth={true} duration={500} offset={-65}>
+          <Link to="about" smooth={true} duration={500} offset={-65} >
             <button className="see-more">もっと見る ↓</button>
           </Link>
         </div>

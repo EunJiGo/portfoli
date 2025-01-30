@@ -51,14 +51,18 @@
 }
 
 /* 작은 화면에서 3개씩 2줄, 2개씩 3줄, 1개씩 6줄로 표시되도록 조정 */
-@media (max-width: 1800px) {
+/* 500px 이하: 한 줄에 1개씩 표시, 헤더 텍스트 크기 40px */
+@media (max-width: 500px) {
     .info-row > div {
-        flex: 1 1 30%; /* 3개씩 한 줄에 표시, 30% 너비 */
+        flex: 1 1 100%; /* 1개씩 한 줄에 표시, 100% 너비 */
     }
-    
+    .about-header {
+        font-size: 40px;
+    }
 }
 
-@media (max-width: 1000px) {
+/* 500px 초과 1000px 이하: 한 줄에 2개씩 표시, 헤더 텍스트 크기 50px */
+@media (min-width: 501px) and (max-width: 1000px) {
     .info-row > div {
         flex: 1 1 45%; /* 2개씩 한 줄에 표시, 45% 너비 */
     }
@@ -67,14 +71,13 @@
     }
 }
 
-@media (max-width: 500px) {
+/* 1000px 초과: 한 줄에 3개씩 표시 */
+@media (min-width: 1001px) {
     .info-row > div {
-        flex: 1 1  100%; /* 1개씩 한 줄에 표시, 100% 너비 */
-    }
-    .about-header {
-        font-size: 40px;
+        flex: 1 1 30%; /* 3개씩 한 줄에 표시, 30% 너비 */
     }
 }
+
 
 /* 텍스트 스타일 */
 .info-row span {

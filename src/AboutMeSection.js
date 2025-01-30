@@ -7,7 +7,7 @@ import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGradua
 const AboutMeSection = () => {
 
   return (
-    <Element name="about" className="section">
+    <Element id="about" name="about" className="section">
       <div className="about-header">
         <Link to="about" smooth={true} duration={500} offset={-65}>
           <FaPaperclip className="about-icon" />
