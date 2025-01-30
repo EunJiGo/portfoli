@@ -153,7 +153,7 @@ const ProjectsSection = () => {
           onRequestClose={closeModal}
           overlayClassName="modal-overlay no-scroll-overlay" // 모달 오버레이에 추가 클래스 적용
           className="modal-content no-scroll-content" // 모달 콘텐츠에 추가 클래스 적용
-        propagateSwipe={false} // 중요: 모달 내 스크롤 가능하게 설정 true
+          propagateSwipe={false} // 중요: 모달 내 스크롤 가능하게 설정 true
         >
           <div className="modal-header">
             README.md
@@ -233,7 +233,7 @@ const ProjectsSection = () => {
         >
           <div className="image-modal-body">
             {/* 현재 이미지 표시 */}
-            <img src={selectedImage} alt="Project Image" />
+            <img src={selectedImage} alt="" />
           </div>
           {/* 이미지 슬라이드 버튼 */}
           <div className="image-nav">
