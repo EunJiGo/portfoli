@@ -1,10 +1,10 @@
 import React from 'react';
 import { Element, Link as ScrollLink } from 'react-scroll'; // Link 이름을 변경하여 충돌 피하기
 import './ArchivingSection.css';
-import { FaPaperclip, FaFilePowerpoint, FaProjectDiagram, FaChalkboardTeacher, FaDesktop, FaUser } from 'react-icons/fa';
+import { FaPaperclip, FaDesktop, FaUser } from 'react-icons/fa';
 
 // 둥근 네모 상자 컴포넌트
-const RoundedBox = ({ icons, title, text1, link, text2, pdfLink }) => {
+const RoundedBox = ({ icons, title, text1, text2, pdfLink }) => {
     // PDF 파일을 열기 위한 함수
     const openPDF = () => {
         window.open(pdfLink.url, "_blank");

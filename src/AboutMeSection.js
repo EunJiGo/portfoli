@@ -5,24 +5,7 @@ import './AboutMeSection.css';
 import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGraduationCap, FaPaperclip } from 'react-icons/fa'; // 아이콘 임포트
 
 const AboutMeSection = () => {
-  const [scrolling, setScrolling] = useState(false);
-
-  // 스크롤 이벤트 핸들링
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  
   return (
     <Element name="about" className="section">
       <div className="about-header">

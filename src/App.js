@@ -80,19 +80,19 @@ function App() {
           <button className="header-title" onClick={scrollToTop}>GEJ's Portfolio</button>
           <nav className={`navigation`}>
             <Link to="about" smooth={true} duration={500} offset={-65}>
-              <a className="navItem">About  me</a>
+              <button className="navItem">About me</button>  {/* <button>로 대체 */}
             </Link>
             <Link to="skills" smooth={true} duration={500} offset={-65}>
-              <a className="navItem">Skills</a>
+              <button className="navItem">Skills</button>
             </Link>
             <Link to="archiving" smooth={true} duration={500} offset={-65}>
-              <a className="navItem">Archiving</a>
+              <button className="navItem">Archiving</button>
             </Link>
             <Link to="projects" smooth={true} duration={500} offset={-65}>
-              <a className="navItem">Projects</a>
+              <button className="navItem">Projects</button>
             </Link>
             <Link to="career" smooth={true} duration={500} offset={-65}>
-              <a className="navItem">Career</a>
+              <button className="navItem">Career</button>
             </Link>
           </nav>
           <button
