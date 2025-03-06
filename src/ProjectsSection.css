@@ -440,7 +440,7 @@
     width: 320px;
   }
   .image-modal-body {
-    width: 320px;
+    width: 300px;
   }
   .image-modal-content img {
     max-width: 100%; /* 이미지가 부모 크기를 넘지 않도록 설정 */
