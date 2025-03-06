@@ -429,11 +429,12 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .projects-details {
     grid-template-columns: 1fr; /* 화면 크기가 768px 이하일 때 한 줄에 하나씩 표시 */
   }
   .modal-content {
-    width: 450px;
+    width: 300px;
   }
 }
+
