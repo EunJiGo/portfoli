@@ -81,7 +81,7 @@
       "GitLab"
     ],
    "readme": true,
-        "images": [],
+        "images": ["./images/portfolio/portfolio01.png", "./images/portfolio/portfolio02.png", "./images/portfolio/portfolio03.png", "./images/portfolio/portfolio04.png", "./images/portfolio/portfolio05.png", "./images/portfolio/portfolio06.png", "./images/portfolio/portfolio07.png"],
         "videos": []
   },  
   {
