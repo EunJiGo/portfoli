@@ -324,7 +324,7 @@
   color: #444;
   font-size: 18px;
   /* 크기 조절 */
-  margin-top: 8px;
+  margin-top: 0px;
   margin-left: 10px;
   padding-left: 10px;
   /* 기본 padding 제거 */
@@ -360,7 +360,7 @@
 .image-modal-body img {
   width: 100%; /* 이미지를 박스 크기에 맞게 채우도록 설정 */
   height: 100%; /* 이미지를 박스 높이에 맞게 조절 */
-  object-fit: cover; /* 비율을 유지하면서 박스를 가득 채우도록 설정 */
+  object-fit: contain; /* 비율을 유지하면서 박스를 가득 채우도록 설정 */
 }
 
 .image-nav {

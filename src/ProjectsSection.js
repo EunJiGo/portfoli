@@ -198,14 +198,18 @@ const ProjectsSection = () => {
             <div className="modal-box">
               <div className='modal-box-title'>
                 <FaLightbulb />
-                <h3>Background</h3>
-              </div>
-              <div className="modal-background">{selectedProject.background}</div>
+                <h3>習得スキル</h3>
+              </div> 
+              <ul className="modal-contents">
+                {selectedProject.background.map((detail, i) => (
+                  <li key={i}>{detail}</li>
+                ))}
+              </ul>
             </div>
             <div className="modal-box">
               <div className='modal-box-title'>
                 <FaSearch />
-                <h3>meaning</h3>
+                <h3>コメント</h3>
               </div>
               <div className="modal-meaning">{selectedProject.meaning}</div>
             </div>

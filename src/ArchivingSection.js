@@ -39,7 +39,7 @@ const RoundedBox = ({ icons, title, text1, text2, pdfLink }) => {
 
 const ArchivingSection = () => {
     const project1PDF = {
-        url: process.env.PUBLIC_URL + "/pdf/test.pdf", // 첫 번째 PDF 파일 링크
+        url: process.env.PUBLIC_URL + "/pdf/GEJ_Project.pdf", // 첫 번째 PDF 파일 링크
     };
 
     // const project2PDF = {

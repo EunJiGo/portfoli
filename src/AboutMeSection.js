@@ -2,7 +2,7 @@ import React from "react";
 import { Element, Link } from 'react-scroll';
 import './header.css';
 import './AboutMeSection.css';
-import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGraduationCap, FaPaperclip } from 'react-icons/fa'; // 아이콘 임포트
+import { FaUser, FaCalendarAlt, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaBriefcase, FaPaperclip } from 'react-icons/fa'; // 아이콘 임포트
 
 const AboutMeSection = () => {
 
@@ -90,11 +90,11 @@ const AboutMeSection = () => {
           <div className="info-sub-row">
             <div className="info-sub">
               <div className="info-item">
-                <FaGraduationCap size={30} />
+                <FaBriefcase size={30} />
               </div>
               <div className="info-text">
-                <span className="sub-title">学歴</span>
-                <span className="sub-contents">白石大学 (IT学部)</span>
+                <span className="sub-title">経歴</span>
+                <span className="sub-contents">3年目 (IT専攻)</span>
               </div>
             </div>
           </div>
