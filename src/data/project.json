@@ -71,7 +71,7 @@
     "install_packages": "npm install",
     "run_server": "npm start"
   },
-    "url": "https://679c215c35eb3200080ad1cd--goeunji-portfolio.netlify.app/",
+    "url": "https://goeunji-portfolio.netlify.app/",
     "technologies": [
       "React",
       "JavaScript",
