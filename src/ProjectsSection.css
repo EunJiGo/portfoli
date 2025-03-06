@@ -434,7 +434,7 @@
     grid-template-columns: 1fr; /* 화면 크기가 768px 이하일 때 한 줄에 하나씩 표시 */
   }
   .modal-content {
-    width: 300px;
+    width: 320px;
   }
 }
 
