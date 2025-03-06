@@ -354,6 +354,9 @@
   overflow: hidden; /* 이미지가 박스를 벗어나지 않도록 처리 */
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 박스에 그림자 추가 */
   /* position: relative; 이미지 안에 텍스트나 다른 요소를 배치할 때 사용할 수 있음 */
+  display: flex; /* 이미지 중앙 정렬을 위한 Flexbox 사용 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
 /* 이미지 스타일 */
