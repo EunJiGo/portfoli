@@ -128,7 +128,7 @@ function App() {
         <div className="masthead-content">
           <h1 onClick={() => console.log('Button clicked')}>- 高恩智 -<br />モバイル開発者ポートフォリオ</h1>
           <hr />
-          <h2>始めなして。<br />本質に集中するモバイル開発者<br />「高恩智」です。</h2>
+          <h2>初めまして。<br />挑戦し続ける開発者「高恩智」です。</h2>
           <Link to="about" smooth={true} duration={500} offset={-65} >
             <button className="see-more">もっと見る ↓</button>
           </Link>

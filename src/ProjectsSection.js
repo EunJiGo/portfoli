@@ -237,7 +237,8 @@ const ProjectsSection = () => {
         >
           <div className="image-modal-body">
             {/* 현재 이미지 표시 */}
-            <img src={selectedImage} alt="" />
+            {/* <img src={selectedImage} alt="" /> */}
+            <img src={selectedImage} alt="" className="image-modal-img" />
           </div>
           {/* 이미지 슬라이드 버튼 */}
           <div className="image-nav">
